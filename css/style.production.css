@@ -59,6 +59,26 @@ button:focus,
 #contact-form {
   border: blue 2px solid;
 }
+#contact-header,
+#work-header,
+#freepik {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+form,
+#contact-text {
+  margin: 0 auto;
+  width: 250px;
+  padding: 10px;
+}
+#contact-text {
+  white-space: nowrap;
+}
+
 .profile__portrait {
   float: left;
   width: 250px;
@@ -102,7 +122,7 @@ span.web:after {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 3px solid blue;
+  border-bottom: 1.5px solid rgb(96, 96, 242);
 }
 .page-header__item {
   -webkit-box-flex: 0;
@@ -123,12 +143,12 @@ span.web:after {
   display: inline-block;
   margin-left: 15px;
 }
-/*start grid fallback
+/*grid fallback:*/
 .grid__item {
   display: inline-block;
   width: 33%;
-}
-end grid fallback*/
+} /*end fallback*/
+
 .grid {
   display: -ms-grid;
   display: grid;
@@ -144,17 +164,8 @@ end grid fallback*/
   min-height: auto;
   margin: 0;
 }
-.grid__item:last-child {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  grid-row: 2 / 4;
-}
 .page-header__item {
   max-width: 100%;
-  max-height: auto;
   margin: 0 auto;
 }
 .main {
@@ -222,8 +233,7 @@ end grid fallback*/
   }
 }
 
-.test,
-.light-house {
+.nola-text {
   -webkit-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-name: color-change;
@@ -243,38 +253,3 @@ end grid fallback*/
   -ms-flex-pack: center;
   justify-content: center;
 }
-/*.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-    transform: rotate(45deg);
-  }
-}
-.cloud-front {
-  animation-duration: 30s;
-  animation-name: cloud-move;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
-}
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-*/
