@@ -69,7 +69,7 @@ button:focus,
   -ms-flex-pack: center;
   justify-content: center;
 }
-form,
+/*form (add form styling later)*/
 #contact-text {
   margin: 0 auto;
   width: 250px;
@@ -78,7 +78,10 @@ form,
 #contact-text {
   white-space: nowrap;
 }
-
+#contact-me {
+  display: flex;
+  justify-content: center;
+}
 .profile__portrait {
   float: left;
   width: 250px;
